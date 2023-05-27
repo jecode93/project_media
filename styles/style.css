@@ -6,10 +6,19 @@ body {
     background: var(--body-color) !important;
 }
 
+main {
+    display: flex;
+}
+
+aside {
+    position: static;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 .search {
     border: 1px #777 solid;
-    /* padding-left: 0.3rem; */
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -59,4 +68,71 @@ input[type=search]:focus {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+}
+
+.videoContent,
+.asideContent {
+    padding-top: 1rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.info {
+    width: 15rem;
+}
+
+.info .part1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channelName h1 {
+    font-size: 1rem;
+}
+
+.channelName span {
+    font-size: 0.75rem;
+    color: #aaa;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
+
+.subscribe,
+.all {
+    background: #363535;
+    border: none;
+    color: white;
+    padding: 0.2rem 1rem;
+}
+
+.sidebarVideo {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebarVideo .video {
+    margin-right: 10px;
+}
+
+.sidebarVideo h2 {
+    font-size: 14px;
+}
+
+.sidebarVideo span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #aaa;
 }
