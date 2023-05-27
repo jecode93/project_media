@@ -1,0 +1,62 @@
+:root {
+    --body-color: ;
+}
+
+body {
+    background: var(--body-color) !important;
+}
+
+
+.search {
+    border: 1px #777 solid;
+    /* padding-left: 0.3rem; */
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.iconSearch {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #777;
+    background: #777;
+    color: white;
+}
+
+
+input[type=search] {
+    border: none;
+    margin-left: 1rem;
+}
+
+input[type=search]:focus {
+    outline: none;
+}
+
+.notification {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notif {
+    position: absolute;
+    top: -5px;
+    right: -14px;
+}
+
+.notif-icon {
+    position: relative;
+}
+
+.navbarY {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
